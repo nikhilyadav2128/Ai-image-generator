@@ -369,15 +369,23 @@ pointer-events: none;
 .footer {
   width: 100%;
   padding: 15px 10px;
-  background: rgba(92, 86, 225, 0.1); /* Gradient ko halki opacity wala look */
+  background: rgba(92, 86, 225, 0.15); /* Slightly more opacity for better visibility */
   color: var(--color-text);
   text-align: center;
   font-size: 1rem;
   font-weight: 500;
   border-radius: 5px;
   margin-top: 20px;
-  backdrop-filter: blur(10px); /* Blur effect for extra style */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* For Safari support */
 }
+
+
+body.dark-theme .footer {
+  background: rgba(30, 41, 59, 0.9); /* Dark theme contrast fix */
+  
+}
+
 
 .footer span {
   font-weight: 700;
