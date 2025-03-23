@@ -407,15 +407,7 @@ pointer-events: none;
 }
 
 
-/* Make Everything Responsive */
-@media (max-width: 768px) {
-  body {
-    padding: 10px;
-  }
-  .main-content {
-    margin: 20px 0 5px;
-  }
-}
+
 
 
 
